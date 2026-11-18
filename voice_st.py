@@ -1,4 +1,4 @@
-##### 기본 정보 입력 #####
+##### 기본 정보 입력 #####pip
 import streamlit as st
 # audiorecorder 패키지 추가
 from audiorecorder import audiorecorder
@@ -65,7 +65,7 @@ def TTS(response):
 def main():
     # 기본 설정
     st.set_page_config(
-        page_title="유경 프로그램",
+        page_title="My Friend Bot",
         layout="wide")
 
     # session state 초기화
@@ -82,14 +82,14 @@ def main():
         st.session_state["check_reset"] = False
 
     # 제목 
-    st.header("유경 프로그램")
+    st.header("My Friend Bot")
     st.markdown("---")
 
     # 기본 설명
-    with st.expander("유경 프로그램에 관하여", expanded=True):
+    with st.expander("My Friend Bot에 관하여", expanded=True):
         st.write(
         """     
-        - 유경 프로그램의 UI는 스트림릿을 활용했습니다.
+        - My Friend Bot의 UI는 스트림릿을 활용했습니다.
         - STT(Speech-To-Text)는 OpenAI의 Whisper AI를 활용했습니다. 
         - 답변은 OpenAI의 GPT 모델을 활용했습니다. 
         - TTS(Text-To-Speech)는 구글의 Google Translate TTS를 활용했습니다.
